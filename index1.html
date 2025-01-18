@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Sport Shop</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/cssStyle.css">
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-1/347821371_144319175294207_4896736030391539438_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nlIEzpJcQRwQ7kNvgH5nKGx&_nc_oc=AdhWr_HM9MTnIy3DeWQEdsCLj9J33InhwJDHrmsCgnu5zqc7WND0O-Go1KQuxC9nmC0&_nc_zt=24&_nc_ht=scontent.fpnh18-1.fna&_nc_gid=Avs2Kopo413E5a2ooqUxigF&oh=00_AYCSh6wm_yajMaLRosNaJBZ98JAUbT7RdGsZFcwE2At6gw&oe=6790F86D" type="image/x-icon">
+
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header sticky-top bg-white shadow-sm py-2 p-5">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+            <div class="logo fs-4 fw-bold ">
+                  <img src="https://www.privatesportshop.com/images/af8ae18f44858f311b8f.svg" alt="logo">
+            </div>
+            <form class="search-form d-none d-md-flex">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Stories 45 events and 5000 products"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-secondary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+            <button class="btn btn-outline-secondary d-md-none">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <!-- Right Side: Navigation Links -->
+          <nav class="d-flex align-items-center gap-4">
+            <a href="#" class="nav-link text-decoration-none"
+              ><i class="bi bi-globe"></i> ENG</a
+            >
+            <a href="./HTML/expereain.html" class="nav-link text-decoration-none"
+              ><i class="bi bi-book"></i> Stores</a
+            >
+            <a href="./HTML/contactUs.html" target="_self" class="nav-link text-decoration-none"
+              ><i class="bi bi-headset"></i> Contact Us</a
+            >
+            <a href="#" class="nav-link text-decoration-none"
+              ><i class="bi bi-person"></i> Connection</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tabs Section -->
+    <section class="tabs-section bg-white py-2">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <div class="nav nav-pills gap-2">
+            <a class="nav-link text-dark" href="./HTML/productFT.html">All Sports</a>
+            <a class="nav-link text-dark" href="#">Men</a>
+            <a class="nav-link text-dark" href="#">Women</a>
+            <a class="nav-link text-dark" href="#">Kids/Babies</a>
+            <a class="nav-link text-dark" href="#">Free Home Delivery</a>
+            <a class="nav-link text-danger" href="#">Up to 60% Off</a>
+            <a class="nav-link text-dark" href="#">B2B Offers</a>
+            <a class="nav-link text-dark" href="#">Special Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Text Section -->
+    <section class="additional-text bg-warning py-2">
+      <div class="container-fluid text-center">
+        Free Delivery with 40$Up, 30 Days Free Return, 100% Original Products
+      </div>
+    </section>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+      <div
+        class="hero-banner position-relative overflow-hidden"
+        style="height: 500px"
+      >
+        <!-- Slide 1 -->
+        <div
+          class="slide active"
+          style="
+            background-image: url('https://contents.mediadecathlon.com/s1179549/k$59249846b8e7f08bcc1a2fba2e4fbe47/defaut.jpg?f=2016x9999');
+          "
+        ></div>
+
+        <!-- Slide 2 -->
+        <div
+          class="slide"
+          style="
+            background-image: url('https://contents.mediadecathlon.com/s1188091/k$df5337fb4100732374bebae2422c0918/defaut.jpg?f=2016x9999');
+          "
+        ></div>
+
+        <!-- Slide 3 -->
+        <div
+          class="slide"
+          style="
+            background-image: url('https://contents.mediadecathlon.com/s1185190/k$c06160914a0ec875ad2a5903088d2405/defaut.jpg?f=2016X9999');
+          "
+        ></div>
+
+        <!-- Slide 4 -->
+        <div
+          class="slide"
+          style="
+            background-image: url('https://contents.mediadecathlon.com/s1185540/k$6604e1855351e6c21d686b8b9d9a81dd/defaut.jpg?f=2016x9999');
+          "
+        ></div>
+
+        <!-- Navigation Buttons -->
+        <button
+          class="nav-button prev position-absolute top-50 start-0 translate-middle-y btn btn-dark"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button
+          class="nav-button next position-absolute top-50 end-0 translate-middle-y btn btn-dark"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Service Bar Section -->
+    <section class="service-bar bg-light py-1 border-bottom font-size-6">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center gap-5 flex-wrap">
+          <div class="service-item d-flex align-items-center gap-2">
+            <i class="bi bi-screwdriver fs-5 text-primary"></i>
+            <div>Service</div>
+          </div>
+          <div class="service-item d-flex align-items-center gap-2">
+            <i class="bi bi-shield-check fs-5 text-primary"></i>
+            <div>2 Years Warranty</div>
+          </div>
+          <div class="service-item d-flex align-items-center gap-2">
+            <i class="bi bi-box-seam fs-5 text-primary"></i>
+            <div>Free Click&Collect Service</div>
+          </div>
+          <div class="service-item d-flex align-items-center gap-2">
+            <i class="bi bi-arrow-counterclockwise fs-5 text-primary"></i>
+            <div>366 Days Return</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="container mt-5 text-danger">New Year Special</h2>
+    <!-- Price Drop Cards Section -->
+    <section
+      class="card-container1 d-flex flex-wrap justify-content-center gap-3 p-4"
+    >
+      <!-- Card 1 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p2030332/k$7e103149c9c8901adaca6a5c34bac99c/1-piece-maternity-swimsuit-romane-black-pink.jpg?format=auto&quality=70&f=250x250"
+          alt="Maternity Swimsuit"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $17.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$9.50</div>
+            <div class="discount text-danger">-44%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">1-PIECE MATERNITY</div>
+          <div class="product-description text-muted">SWIMSUIT ROMANE</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p1729020/k$79a5e235f7ad13874890d68985000de4/baby-uv-protection-wetsuit-kloupi-panda-print-blue-and-green.jpg?format=auto&quality=70&f=250x250"
+          alt="Baby UV Protection"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $25.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$15.00</div>
+            <div class="discount text-danger">-40%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">BABY UV PROTECTION</div>
+          <div class="product-description text-muted">SWIMSUIT ROMANE</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p2075991/k$701e8799a28511955239de68bd57afb4/self-powered-and-connected-exercise-bike-eb-520.jpg?format=auto&quality=70&f=250x250"
+          alt="Exercise Bike"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $300.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$250.00</div>
+            <div class="discount text-danger">-17%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">EXERCISE BIKE 520</div>
+          <div class="product-description text-muted">CONNECTED T.</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p2579248/k$9b3e3d6c2e0bc807b0c81bbeaebd6fb7/3-person-2-second-freshblack-camping-tent.jpg?format=auto&quality=70&f=250x250"
+          alt="Pop-Up Tent"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $50.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$35.00</div>
+            <div class="discount text-danger">-30%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">2 PERSON TENT</div>
+          <div class="product-description text-muted">POP-UP 2 SECONDS</div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p1259842/k$2345530d33e5f5342a7311a10beaaa18/camping-tent-2-seconds-2-people-blue.jpg?format=auto&quality=70&f=250x250"
+          alt="Camping Tent"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $80.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$60.00</div>
+            <div class="discount text-danger">-25%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">CAMPING TENT</div>
+          <div class="product-description text-muted">3-PERSON</div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card" style="width: 200px">
+        <img
+          src="https://contents.mediadecathlon.com/p2131449/k$f855fc0a6863866112991f88d3252ccf/prod.jpg?format=auto&quality=40&f=400x400"
+          alt="Wetsuit Kloupi"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <div class="price-container d-flex justify-content-center gap-2">
+            <div class="price-drop text-decoration-line-through text-muted">
+              $45.00
+            </div>
+            <div class="discounted-price bg-danger text-white p-1">$30.00</div>
+            <div class="discount text-danger">-33%</div>
+          </div>
+          <div class="product-name fw-bold mt-2">WETSUIT KLOUPI</div>
+          <div class="product-description text-muted">PAND - ONE SIZE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-1">
+      <h2 class="container mt-5 text-danger">
+            <span class="text-black">LET'S GO </span> 
+            <span class="text-yellow">RUNNING!</span>
+            </h2>
+
+      <div class="image-slider-container">
+        <!-- Image Banner -->
+        <img
+          src="https://contents.mediadecathlon.com/s1185115/k$2394883c3c2d1187fe96412e47c2eece/defaut.jpg?f=480x999"
+          alt="Banner Image"
+          class="banner-image"
+        />
+
+        <!-- Scrollable Card Container -->
+        <div class="card-container-wrapper">
+          <!-- Scroll Buttons -->
+          <button class="scroll-button left" aria-label="Scroll Left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="scroll-button right" aria-label="Scroll Right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Card Container -->
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2464059/k$8229527bb01b6d5b9015c04a2050b3c0/ttb-100-40-6-pack-table-tennis-balls-orange.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$45.00</div>
+                  <div class="discounted-price">$29.00</div>
+                  <div class="discount">-35%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">RUN ACTIVE MENS</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p266486/k$411f3e4b3fa343fb415158bd5e17f615/fishing-poncho-100.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$79.00</div>
+                  <div class="discounted-price">$59.00</div>
+                  <div class="discount">-25%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">WOMEN'S URBAN</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2267769/k$c3aa56412151f4efeea9413d1d1ba614/17l-backpack-essential-blue.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$559.00</div>
+                  <div class="discounted-price">$499.00</div>
+                  <div class="discount">-11%</div>
+                </div>
+                <div class="product-name">TREADMILL</div>
+                <div class="product-description">RUNTOOE-1</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p1329502/k$c8ebec54a3696311d7173e33bb645fc8/100-plastic-tritan-screw-top-hiking-flask-08-l.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$19.00</div>
+                  <div class="discounted-price">$15.00</div>
+                  <div class="discount">-21%</div>
+                </div>
+                <div class="product-name">WALKING SHOES</div>
+                <div class="product-description">SOFT COMFORT</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2583201/k$48aa3a91dc7a64c6022f506d159281b7/nh100-10-litres-backpack-black.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2723315/k$9310ae5e982bb1c246daa85463ef9ca2/prod.jpg?format=auto&quality=40&f=400x400"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 mt-1">
+      <div class="image-slider-container">
+        <!-- Image Banner -->
+        <img
+          src="https://contents.mediadecathlon.com/s1185112/k$20a1d6a6d59f9ae36088d05b883afe14/defaut.jpg?f=480x999"
+          alt="Banner Image"
+          class="banner-image"
+        />
+
+        <!-- Scrollable Card Container -->
+        <div class="card-container-wrapper">
+          <!-- Scroll Buttons -->
+          <button class="scroll-button left" aria-label="Scroll Left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="scroll-button right" aria-label="Scroll Right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Card Container -->
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2269537/k$7b36e9e8c1e6658ea1395ff904c54012/kiprun-long-2-men-s-running-shoes-black-yellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$45.00</div>
+                  <div class="discounted-price">$29.00</div>
+                  <div class="discount">-35%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">RUN ACTIVE MENS</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2606935/k$47dcc74e3c26ed05132535c90a4c4713/run-active-grip-men-s-running-shoes-black-grey.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$79.00</div>
+                  <div class="discounted-price">$59.00</div>
+                  <div class="discount">-25%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">WOMEN'S URBAN</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2153047/k$04e4aed013c4d3d38bf4acaa2c69179b/women-s-running-shoes-jogflow-500-k-dark-grey.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$559.00</div>
+                  <div class="discounted-price">$499.00</div>
+                  <div class="discount">-11%</div>
+                </div>
+                <div class="product-name">TREADMILL</div>
+                <div class="product-description">RUNTOOE-1</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2606751/k$5211ddac45b25d0224e88eb6ddac9ff3/run-active-men-s-running-shoes-blackslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$19.00</div>
+                  <div class="discounted-price">$15.00</div>
+                  <div class="discount">-21%</div>
+                </div>
+                <div class="product-name">WALKING SHOES</div>
+                <div class="product-description">SOFT COMFORT</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-sports">
+      <div class="container mt-5 mb-5">
+          <!-- Section Title -->
+          <h2 class="section-title">
+            <span >POPULAR</span> 
+            <span class="text-blue"> SPORTS </span>
+            </h2>
+
+          <div class="row">
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167314/k$cfdbfdbee1436e32f128ce82abb8e16a/defaut.jpg?f=300x999" alt="Running" class="img-fluid">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167307/k$f21ac388571c63879afae1791707010a/defaut.jpg?f=300x999" alt="Hiking" class="img-fluid">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167315/k$906aa1139818694f0cb4d197a3b3dddf/defaut.jpg?f=300x999" alt="Badminton" class="img-fluid">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167316/k$0d443bc349e57e9b7d3c75420891d875/defaut.jpg?f=300x999" alt="Swimming" class="img-fluid">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167317/k$a6230a247ad3762afb6c5c9095576d1f/defaut.jpg?f=300x999" alt="Fitness" class="img-fluid">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="sport-item">
+                      <img src="https://contents.mediadecathlon.com/s1167318/k$1f560bfc4029647400fea3bee0338fe5/defaut.jpg?f=300x999" alt="Cycling" class="img-fluid">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="product-container">
+          <img src="https://contents.mediadecathlon.com/s1185121/k$e1c84ec17511eb63a7b395ebf310d095/defaut.jpg?f=2016x9999" alt="Product Image" class="product-image">
+      </div>
+  </section>
+
+  <section class="container my-1">
+
+      <div class="image-slider-container">
+        <!-- Image Banner -->
+        <img
+          src="https://contents.mediadecathlon.com/s1185117/k$538c4fd76aa874f89eb6159e29b04dfb/defaut.jpg?f=480x999"
+          alt="Banner Image"
+          class="banner-image"
+        />
+
+        <!-- Scrollable Card Container -->
+        <div class="card-container-wrapper">
+          <!-- Scroll Buttons -->
+          <button class="scroll-button left" aria-label="Scroll Left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="scroll-button right" aria-label="Scroll Right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Card Container -->
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2579599/k$3feabb963d4010049463744162acdb43/camping-tent-mh100-3-person-fresh.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$45.00</div>
+                  <div class="discounted-price">$29.00</div>
+                  <div class="discount">-35%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">RUN ACTIVE MENS</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2583166/k$1550e538ba3283aaa52367d70055d17b/6-person-camping-living-area-arpenaz-base-m.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$79.00</div>
+                  <div class="discounted-price">$59.00</div>
+                  <div class="discount">-25%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">WOMEN'S URBAN</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2579363/k$918ce4452fffb87cabc41b77d2b80c12/camping-tent-with-poles-arpenaz-4-4-person-1-bedroom.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$559.00</div>
+                  <div class="discounted-price">$499.00</div>
+                  <div class="discount">-11%</div>
+                </div>
+                <div class="product-name">TREADMILL</div>
+                <div class="product-description">RUNTOOE-1</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2583272/k$788e2ecdd78d02d7332ad3deac50d974/camping-shelter-arpenaz-fresh-instant-canopy-8-person.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$19.00</div>
+                  <div class="discounted-price">$15.00</div>
+                  <div class="discount">-21%</div>
+                </div>
+                <div class="product-name">WALKING SHOES</div>
+                <div class="product-description">SOFT COMFORT</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2579082/k$684efb64d5468fb773577cdf1cb57a08/mh100-camping-tent-2-man.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card1">
+              <img
+                src="https://contents.mediadecathlon.com/p2199773/k$446ec49822adaeb6d20440908da89a15/men-s-running-shoes-kiprun-kd500-2-blackslashpinkslashyellow.jpg?format=auto&quality=70&f=250x250"
+                alt="Running Shoes"
+              />
+              <div class="card-body">
+                <div class="price-container">
+                  <div class="price-drop">$99.00</div>
+                  <div class="discounted-price">$79.00</div>
+                  <div class="discount">-20%</div>
+                </div>
+                <div class="product-name">RUNNING SHOES</div>
+                <div class="product-description">KIPRUN KOSOO2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center my-5">
+      <h2 class="mb-4">MORE DEALS</h2>
+      <div class="row image-container">
+          <div class="col-3">
+              <img src="https://contents.mediadecathlon.com/s1116463/k$95712b723a5cebb40af2be7b646b7cf1/defaut.jpg?f=322x999" alt="Image 1" class="img-fluid rounded">
+          </div>
+          <div class="col-3">
+              <img src="https://contents.mediadecathlon.com/s1116465/k$2276202f011eb41f8bb7325f50d7cf50/defaut.jpg?f=322x999" alt="Image 2" class="img-fluid rounded">
+          </div>
+          <div class="col-3">
+              <img src="https://contents.mediadecathlon.com/s1116461/k$a0540f1ab9a279ede8b39b16450ace57/defaut.jpg?f=322x999" alt="Image 3" class="img-fluid rounded">
+          </div>
+          <div class="col-3">
+              <img src="https://contents.mediadecathlon.com/s1116821/k$f0eb1e97ebfd43a1c03266b347aad674/defaut.jpg?f=322x999" alt="Image 4" class="img-fluid rounded">
+          </div>
+      </div>
+  </section>
+
+
+    <!-- Footer Section -->
+    <footer class="container-fluid">
+      <div class="container">
+          <div class="row">
+              <!-- Payment Method -->
+              <div class="col-md-6 mb-4 payment-method">
+                  <h2>PAYMENT METHOD</h2>
+                  <img src="https://www.decathlon.com.kh/img/footer/online-payment-aba.png" alt="Payment Methods" class="img-fluid">
+              </div>
+
+              <!-- Empty column to push FOLLOW US to the end -->
+              <div class="col-md-3 mb-4"></div>
+
+              <!-- Follow Us -->
+              <div class="col-md-3 mb-4">
+                  <h2>FOLLOW US</h2>
+                  <div class="social-icons">
+                      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <!-- Our Services -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h2>OUR SERVICES</h2>
+                  <ul>
+                      <li><a href="#">Our Delivery Service</a></li>
+                      <li><a href="#">Click & Collect</a></li>
+                      <li><a href="#">Gift Cards</a></li>
+                      <li><a href="#">Add-on Services</a></li>
+                      <li><a href="#">Decathlon B2B</a></li>
+                      <li><a href="#">Warranty</a></li>
+                      <li><a href="#">Membership</a></li>
+                  </ul>
+              </div>
+
+              <!-- About Us -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h2>ABOUT US</h2>
+                  <ul>
+                      <li><a href="./HTML/about.html">About us</a></li>
+                      <li><a href="#">Decathlon United</a></li>
+                      <li><a href="#">Our Location</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Sports Blog</a></li>
+                      <li><a href="#">Passion Brands</a></li>
+                  </ul>
+              </div>
+
+              <!-- More Information -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h2>MORE INFORMATION</h2>
+                  <ul>
+                      <li><a href="#">How To Order</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Product Recall</a></li>
+                      <li><a href="#">Career</a></li>
+                  </ul>
+              </div>
+
+              <!-- Contact Us -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <h2>CONTACT US</h2>
+                  <p>We are ready to help!</p>
+              </div>
+          </div>
+
+          <!-- Horizontal Line -->
+          <hr class="footer-divider">
+
+          <!-- Description and Contact Information -->
+          <div class="row footer-description">
+              <div class="col-12 text-center">
+                <div class=" logo my-2">
+                  <img src="https://www.privatesportshop.com/images/af8ae18f44858f311b8f.svg" alt="logo">
+                </div>
+                  <p>
+                      Describen is the most complete and largest sports equipment and equipment shop in Cambodia, founded in 1974. We provide various kinds of sports products for activities such as hiking, camping, mountaineering, and more. We also offer sports clothing, shoes, accessories, and other equipment with good quality and affordable prices. Describen Cambodia serves customers both in-store and online.
+                  </p>
+                  <p>
+                      For Describen Customer Service, call <a href="tel:096477919">096 477 919</a> or <a href="tel:018888471">018 888 471</a> (Telegram) or email <a href="mailto:centest@describen.com.hk">centest@describen.com.hk</a>.
+                  </p>
+                  <p>
+                      © 2023 Describen. All rights reserved.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      const cardContainer = document.querySelector(".card-container");
+      const scrollLeftButton = document.querySelector(".scroll-button.left");
+      const scrollRightButton = document.querySelector(".scroll-button.right");
+
+      scrollLeftButton.addEventListener("click", () => {
+        cardContainer.scrollBy({ left: -200, behavior: "smooth" });
+      });
+
+      scrollRightButton.addEventListener("click", () => {
+        cardContainer.scrollBy({ left: 200, behavior: "smooth" });
+      });
+    </script>
+    <script>
+      const heroBanner = document.querySelector(".hero-banner");
+      const slides = document.querySelectorAll(".hero-banner .slide");
+      const prevButton = document.querySelector(".nav-button.prev");
+      const nextButton = document.querySelector(".nav-button.next");
+
+      let currentSlide = 0;
+      let autoScrollInterval;
+
+      const showSlide = (index) => {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      };
+
+      const nextSlide = () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      };
+
+      const prevSlide = () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      };
+
+      const startAutoScroll = () => {
+        autoScrollInterval = setInterval(nextSlide, 5000); 
+      };
+
+      heroBanner.addEventListener("mouseenter", () => {
+        clearInterval(autoScrollInterval);
+      });
+
+      heroBanner.addEventListener("mouseleave", startAutoScroll);
+
+      prevButton.addEventListener("click", prevSlide);
+      nextButton.addEventListener("click", nextSlide);
+
+      startAutoScroll();
+    </script>
+  </body>
+</html>

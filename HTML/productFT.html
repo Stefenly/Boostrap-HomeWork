@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decathlon</title>
+     <!-- Bootstrap CSS -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+   />
+   <!-- Bootstrap Icons -->
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+     rel="stylesheet"
+   />
+
+   <link rel="shortcut icon" href="https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-1/347821371_144319175294207_4896736030391539438_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=sWqrciWFbRUQ7kNvgH__t49&_nc_oc=AdhjnXC0rtqZ8OIUtWtGj2Pc5Rx5KCtICSU3DHA3offfan2ArPABcpJqhSkdEUQv1Bs&_nc_zt=24&_nc_ht=scontent.fpnh18-1.fna&_nc_gid=Aj0NY0ld0VfGcIm-QYvmR2Z&oh=00_AYDJHRU4w-ES9K9OxIaQhxDwYeCeQB9-bJkYtciDxRv-Ow&oe=679130AD" type="image/x-icon">
+    <style>
+        .logo img {
+        width: 150px;
+      }
+      .logo:hover {
+        color: #007bff !important;
+      }
+      .nav-link:hover {
+        color: #007bff !important;
+      }
+      .search-form .form-control:hover,
+      .search-form .btn-outline-secondary:hover {
+        border-color: #007bff !important;
+      }
+      .search-form .btn-outline-secondary:hover {
+        background-color: #007bff !important;
+        color: #fff !important;
+      }
+      
+      .tabs-section .nav-link:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-top: 1px solid #ddd;
+        }
+        footer h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin-bottom: 8px;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        footer ul li a:hover {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .contact-us p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .payment-method img {
+            max-width: 40%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .footer-description {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .footer-description a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-description a:hover {
+            text-decoration: underline;
+        }
+        .footer-divider {
+            margin: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+
+      .logo-section {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        height: 50%;
+        background-color: aliceblue;
+        margin: 0;
+      } 
+        .category img:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #000;
+        }
+      .logo1 img {
+        width: 50%;
+      }
+      .categories-section {
+        margin: 20px 0;
+      }
+      .categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .category {
+        margin: 10px;
+        text-align: center;
+      }
+      .category img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+      }
+      .tagline {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .logo-section p,
+      h1 {
+        margin: 20px 0;
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .logo-section h1 {
+        margin-top: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Header Section -->
+     <header class="header sticky-top bg-white shadow-sm py-2 p-5">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <div class="logo fs-4 fw-bold ">
+                    <a href="../index1.html"> <img src="https://www.privatesportshop.com/images/af8ae18f44858f311b8f.svg" alt="logo"> </a>
+              </div>
+              <form class="search-form d-none d-md-flex">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Stories 45 events and 5000 products"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-secondary" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+              <button class="btn btn-outline-secondary d-md-none">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+  
+            <!-- Right Side: Navigation Links -->
+            <nav class="d-flex align-items-center gap-4">
+              <a href="#" class="nav-link text-decoration-none"
+                ><i class="bi bi-globe"></i> ENG</a
+              >
+              <a href="#" class="nav-link text-decoration-none"
+                ><i class="bi bi-book"></i> Stores</a
+              >
+              <a href="./contactUs.html" class="nav-link text-decoration-none"
+                ><i class="bi bi-headset"></i> Contact Us</a
+              >
+              <a href="#" class="nav-link text-decoration-none"
+                ><i class="bi bi-person"></i> Connection</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+
+          <!-- Tabs Section -->
+    <section class="tabs-section bg-white py-2">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <div class="nav nav-pills gap-2">
+            <a class="nav-link text-dark" href="./productFT.html">All Sports</a>
+            <a class="nav-link text-dark" href="#">Men</a>
+            <a class="nav-link text-dark" href="#">Women</a>
+            <a class="nav-link text-dark" href="#">Kids/Babies</a>
+            <a class="nav-link text-dark" href="#">Free Home Delivery</a>
+            <a class="nav-link text-danger" href="#">Up to 60% Off</a>
+            <a class="nav-link text-dark" href="#">B2B Offers</a>
+            <a class="nav-link text-dark" href="#">Special Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Text Section -->
+    <section class="additional-text bg-warning py-2">
+      <div class="container-fluid text-center">
+        Free Delivery with 40$Up, 30 Days Free Return, 100% Original Products
+      </div>
+    </section>
+    <section class="logo-section">
+      <div class="logo1">
+        <img
+          src="https://www.privatesportshop.com/images/af8ae18f44858f311b8f.svg"
+          alt="Decathlon Logo"
+        />
+      </div>
+      <h1>SHOP BY SPORTS</h1>
+      <p class="tagline">
+        WE DESIGN, MANUFACTURE, AND OFFER THE BEST GEAR AT THE BEST PRICES FOR
+        MORE THAN 80 SPORTS
+      </p>
+    </section>
+    <section class="categories-section">
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137403/k$450a04013fcdbaca8c7382e5dd86e0da/defaut.jpg?f=480x999"
+            alt="Camping"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137404/k$7465a760b7b615cbc5064f5773f14558/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137409/k$e696055d75a3e1fdaa7cb19d2fedf37d/defaut.jpg?f=480x999"
+            alt="Hiking & Trekking"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137410/k$e374a08056d615461d24143e3b308fa0/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137425/k$9804f4161e4e4e68d4d307cae42ea57f/defaut.jpg?f=480x999"
+            alt="Camping"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137785/k$3ab757c33ab244e96290d5cec45410da/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137411/k$119faf57b7037749a2bcde728186ad05/defaut.jpg?f=480x999"
+            alt="Hiking & Trekking"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137412/k$df13a0a81e3a17b568bfe67488619a43/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137786/k$d0e54401bf0845bd5cf75669af9fb8f8/defaut.jpg?f=480x999"
+            alt="Camping"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137401/k$31d6455a9ae649f9e00eda1a801090f7/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137402/k$adc77a797347f562229c5d47374fe101/defaut.jpg?f=480x999"
+            alt="Hiking & Trekking"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137405/k$8f2948d77476d114ea0cc524874d6e7c/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137400/k$e05f262b7a7eb719c2e718191660a2b1/defaut.jpg?f=480x999"
+            alt="Camping"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137413/k$4b4f21c74c56fae47bba9daf07bc81dc/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137414/k$6adb1d1f85b377dc7f96da8ccaa04ca6/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137407/k$a61037ebe3e589c73953d16e693b5913/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137408/k$32a42606721bb8fc4f759cc1c97fb261/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137787/k$c8e5788a54f7dfa412a77854210662d3/defaut.jpg?f=480x999"
+            alt="Hiking & Trekking"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137426/k$54532c56cfa637b9e6766aa71abea71f/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137427/k$f7b85ad54fbf1f697dbc02a377502f84/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137790/k$c13f182aafe3263315b10b9c1503fee9/defaut.jpg?f=480x999"
+            alt="Camping"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137428/k$6c191b73197912bcb789f1aa42d84bd3/defaut.jpg?f=480x999"
+            alt="Climbing"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137417/k$2371883f53b6f40c11d02bcf8a76075e/defaut.jpg?f=480x999"
+            alt="Hiking & Trekking"
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137431/k$e310da2cf20e0d5365110906a7a83247/defaut.jpg?f=480x999"
+            alt="Inline Skate"
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137424/k$b311360cf3001146da65c25dd1d8af30/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137418/k$81a5c5dc375b6f835642ccffed92d02c/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137419/k$756132d860fd4dc68e863bee62c45dc0/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137420/k$53b38932336b79bd116e5f7f4a61c0bb/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137421/k$84dda6681b9bd2b8ab289afeb5d47615/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137422/k$4d034c5ea7ec9b36de5ccd437e7ab9fa/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137429/k$5bf51ac4e23871c5f730930512fe5d27/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137788/k$c2986de124bb3b6ce5750f7852c183f8/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137430/k$688b101f0e80d61892a47180acc94861/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137423/k$4f3e34846f84dd7484481f1026eb724d/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137789/k$10a8ff9eb4d43e8c848ab320bba06a0a/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137432/k$7fa7310575300a2a59ead64246877fd4/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137784/k$3d93292a9e0989199ce23f9336de2a7f/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+        <div class="category">
+          <img
+            src="https://contents.mediadecathlon.com/s1137406/k$185f2b69c7f54db9aed3d8596f924563/defaut.jpg?f=480x999"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- Payment Method -->
+                <div class="col-md-6 mb-4 payment-method">
+                    <h2>PAYMENT METHOD</h2>
+                    <img src="https://www.decathlon.com.kh/img/footer/online-payment-aba.png" alt="Payment Methods" class="img-fluid">
+                </div>
+  
+                <!-- Empty column to push FOLLOW US to the end -->
+                <div class="col-md-3 mb-4"></div>
+  
+                <!-- Follow Us -->
+                <div class="col-md-3 mb-4">
+                    <h2>FOLLOW US</h2>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="row">
+                <!-- Our Services -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h2>OUR SERVICES</h2>
+                    <ul>
+                        <li><a href="#">Our Delivery Service</a></li>
+                        <li><a href="#">Click & Collect</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Add-on Services</a></li>
+                        <li><a href="#">Decathlon B2B</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Membership</a></li>
+                    </ul>
+                </div>
+  
+                <!-- About Us -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h2>ABOUT US</h2>
+                    <ul>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="#">Decathlon United</a></li>
+                        <li><a href="#">Our Location</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Sports Blog</a></li>
+                        <li><a href="#">Passion Brands</a></li>
+                    </ul>
+                </div>
+  
+                <!-- More Information -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h2>MORE INFORMATION</h2>
+                    <ul>
+                        <li><a href="#">How To Order</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Product Recall</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+  
+                <!-- Contact Us -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h2>CONTACT US</h2>
+                    <p>We are ready to help!</p>
+                </div>
+            </div>
+  
+            <!-- Horizontal Line -->
+            <hr class="footer-divider">
+  
+            <!-- Description and Contact Information -->
+            <div class="row footer-description">
+                <div class="col-12 text-center">
+                  <div class=" logo my-2">
+                    <img src="https://www.privatesportshop.com/images/af8ae18f44858f311b8f.svg" alt="logo">
+                  </div>
+                    <p>
+                        Describen is the most complete and largest sports equipment and equipment shop in Cambodia, founded in 1974. We provide various kinds of sports products for activities such as hiking, camping, mountaineering, and more. We also offer sports clothing, shoes, accessories, and other equipment with good quality and affordable prices. Describen Cambodia serves customers both in-store and online.
+                    </p>
+                    <p>
+                        For Describen Customer Service, call <a href="tel:096477919">096 477 919</a> or <a href="tel:018888471">018 888 471</a> (Telegram) or email <a href="mailto:centest@describen.com.hk">centest@describen.com.hk</a>.
+                    </p>
+                    <p>
+                        © 2023 Describen. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  
+      <script>
+        const cardContainer = document.querySelector(".card-container");
+        const scrollLeftButton = document.querySelector(".scroll-button.left");
+        const scrollRightButton = document.querySelector(".scroll-button.right");
+  
+        scrollLeftButton.addEventListener("click", () => {
+          cardContainer.scrollBy({ left: -200, behavior: "smooth" });
+        });
+  
+        scrollRightButton.addEventListener("click", () => {
+          cardContainer.scrollBy({ left: 200, behavior: "smooth" });
+        });
+      </script>
+  
+      <!-- Bootstrap JS (Optional, for interactive components) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
